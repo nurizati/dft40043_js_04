@@ -11,8 +11,8 @@ function onFocus(x) {
 }
 
 function onBlur() {
-    var x = document.getElementById("fname");
-    x.value = x.value.toUpperCase();
+    var x = document.getElementById("myInput");
+    document.getElementById("myInput").style.background = "blue";
 }
 
 function PAlert() {
