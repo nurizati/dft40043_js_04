@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="onLoad()">
+
+    <h1>ONLOAD</h1>
+    <h2>Hello World!</h2>
+
+    <br><br><br>
+
+    <h1>ONSUBMIT</h1>
+    <form action="/action_page.php" onsubmit="onSubmit()">
+        Enter name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br><br><br>
+
+    <h1>ONFOCUS</h1>
+    Enter your name: <input type="text" onfocus="onFocus(this)">
+    <br><br>
+    <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+    <br><br><br><br>
+
+    <h1>ONBLUR</h1>
+    Enter your name: <input type="text" id="fname" onblur="onBlur()">
+    <br><br>
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+    <br><br><br>
+    
+    <h1>ALERT</h1>
+    <p>Click the button to demonstrate line-breaks in an alert box.</p>
+    <button onclick="PAlert()">Try it</button>
+
+    <br><br><br><br>
+
+    <h1>COMFIRM</h1>
+    <p>Click the button to display a confirm box.</p>
+    <button onclick="PComfirm()">Try it</button>
+
+    <br><br><br><br>
+
+    <h1>PROMPT</h1>
+    <p>Click the button to demonstrate the prompt box.</p>
+    <button onclick="PPromt()">Try it</button>
+    <p id="demo"></p>
+
+    <br><br><br><br>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
